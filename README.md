@@ -12,7 +12,7 @@
 
 <br>
 
-<img src="./assets/mars_concept" width="92%">
+<img src="./assets/mars_concept.png" width="92%">
 
 <br>
 
