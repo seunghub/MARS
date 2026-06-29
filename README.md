@@ -282,18 +282,6 @@ python test.py \
   --use-nir
 ```
 
-
-## ✅ Practical Tips
-
-- Adjust `CUDA_VISIBLE_DEVICES`, `--gpu`, or `--gpu_ids` to match your machine.
-- Check dataset paths before launching each benchmark; the four benchmark folders follow slightly different path conventions.
-- For missing-modality experiments, verify the modality mask or command flag used by each dataset implementation.
-- Start with a single benchmark, confirm the dataloader works, then scale to the full experiment suite.
-
-## 🙏 Acknowledgements
-
-This repository builds on several public multimodal learning and segmentation codebases, including DMRNet-style classification code, the official MCubeS material segmentation baseline, and UPMC Food-101 image-text fusion resources.
-
 ## 📚 Citation
 
 If this repository is useful for your research, please cite:
