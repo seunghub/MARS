@@ -1,9 +1,10 @@
 <div align="center">
 
-# MARS: Residual-Guided Expert Specialization  
-## for Incomplete Multimodal Learning
+# MARS  
+### Residual-Guided Expert Specialization for Incomplete Multimodal Learning
 
-### ECCV 2026 Poster
+**ECCV 2026 Poster**
+
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](#installation)
 [![PyTorch](https://img.shields.io/badge/PyTorch-Implementation-ee4c2c.svg)](#installation)
 [![Task](https://img.shields.io/badge/Tasks-Classification%20%7C%20Segmentation-7b61ff.svg)](#benchmark-results)
