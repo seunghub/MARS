@@ -15,6 +15,7 @@
 <img src="./assets/mars_concept.png" width="92%">
 
 <br>
+<div align="left">
 
 <em> MARS compares full- and partial-modality representations to identify missingness-induced residuals, enabling residual-guided expert specialization for robust incomplete multimodal learning. </em>
 
