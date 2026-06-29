@@ -10,13 +10,13 @@
 [![Task](https://img.shields.io/badge/Tasks-Classification%20%7C%20Segmentation-7b61ff.svg)](#benchmark-results)
 [![License](https://img.shields.io/badge/License-See%20LICENSE-lightgrey.svg)](#license)
 
-**Official PyTorch implementation of MARS**, a mixture-of-experts framework for robust multimodal prediction when one or more modalities are missing at inference time.
+<br>
 
-</div>
+<img src="./assets/mars_concept" width="92%">
 
-<p align="center">
-  <img src="assets/mars_framework.png" width="95%" alt="MARS framework overview">
-</p>
+<br>
+
+<em> MARS compares full- and partial-modality representations to identify missingness-induced residuals, enabling residual-guided expert specialization for robust incomplete multimodal learning. </em>
 
 ## ✨ Highlights
 
