@@ -1,0 +1,239 @@
+class_num,2
+se_reduction,16
+modal,multi
+inplace_new,384
+data_root,../data/CASIA-SURF
+miss_modal,0
+batch_size,64
+lr,0.001
+lr_decrease,multi_step
+lr_warmup,True
+total_epoch,5
+num_experts,16
+top_k,5
+train_epoch,100
+weight_decay,0.0005
+momentum,0.9
+name,exp473
+model_root,./output/models
+log_root,./output/logs
+log_interval,10
+save_interval,10
+retrain,False
+gpu,0
+anchor_task,20.0
+sampled_task,20.0
+load_balance,1.0
+gate_distill,20.0
+residual_reconst,1
+var_order,0.2
+alpha,1.0
+prob_epoch,20
+temperature,0.06
+log_name,exp473.csv
+model_name,exp473
+RGB          : 0.4518
+Depth        : 0.7368
+IR           : 0.4366
+RGB+Depth    : 0.5601
+RGB+IR       : 0.4898
+IR+Depth     : 0.6778
+RGB+IR+Depth : 0.7070
+Epoch 0), test_ACER: 0.5800, best_ACER: 0.5800, anchor_task: 0.7305, sampled_task: 0.7267, var_order: 0.9161, load_balance: 0.1391, gate_distill: 0.3602
+Epoch 1), test_ACER: 0.5810, best_ACER: 0.5800, anchor_task: 0.7302, sampled_task: 0.7266, var_order: 0.9157, load_balance: 0.1353, gate_distill: 0.3604
+RGB          : 0.2625
+Depth        : 0.1002
+IR           : 0.2177
+RGB+Depth    : 0.0528
+RGB+IR       : 0.2105
+IR+Depth     : 0.0716
+RGB+IR+Depth : 0.0577
+Epoch 2), test_ACER: 0.1390, best_ACER: 0.1390, anchor_task: 0.0690, sampled_task: 0.1097, var_order: 0.9883, load_balance: 0.1332, gate_distill: 0.2516
+Epoch 3), test_ACER: 0.2139, best_ACER: 0.1390, anchor_task: 0.0174, sampled_task: 0.0300, var_order: 0.9413, load_balance: 0.1374, gate_distill: 0.2587
+Epoch 4), test_ACER: 0.2105, best_ACER: 0.1390, anchor_task: 0.0078, sampled_task: 0.0150, var_order: 0.8715, load_balance: 0.1155, gate_distill: 0.2624
+Epoch 5), test_ACER: 0.3355, best_ACER: 0.1390, anchor_task: 0.0088, sampled_task: 0.0160, var_order: 0.9060, load_balance: 0.1366, gate_distill: 0.2934
+Epoch 6), test_ACER: 0.3543, best_ACER: 0.1390, anchor_task: 0.0047, sampled_task: 0.0094, var_order: 0.8376, load_balance: 0.1149, gate_distill: 0.2631
+Epoch 7), test_ACER: 0.1412, best_ACER: 0.1390, anchor_task: 0.0027, sampled_task: 0.0065, var_order: 0.8207, load_balance: 0.1024, gate_distill: 0.2428
+RGB          : 0.1298
+Depth        : 0.0740
+IR           : 0.1142
+RGB+Depth    : 0.0549
+RGB+IR       : 0.1279
+IR+Depth     : 0.0243
+RGB+IR+Depth : 0.1120
+Epoch 8), test_ACER: 0.0910, best_ACER: 0.0910, anchor_task: 0.0028, sampled_task: 0.0046, var_order: 0.7831, load_balance: 0.0975, gate_distill: 0.2194
+Epoch 9), test_ACER: 0.3287, best_ACER: 0.0910, anchor_task: 0.0006, sampled_task: 0.0011, var_order: 0.7656, load_balance: 0.0767, gate_distill: 0.1771
+Epoch 10), test_ACER: 0.1419, best_ACER: 0.0910, anchor_task: 0.0004, sampled_task: 0.0010, var_order: 0.7742, load_balance: 0.0679, gate_distill: 0.1555
+Epoch 11), test_ACER: 0.1445, best_ACER: 0.0910, anchor_task: 0.0001, sampled_task: 0.0008, var_order: 0.7657, load_balance: 0.0636, gate_distill: 0.1333
+Epoch 12), test_ACER: 0.1408, best_ACER: 0.0910, anchor_task: 0.0020, sampled_task: 0.0043, var_order: 0.7815, load_balance: 0.0728, gate_distill: 0.1403
+Epoch 13), test_ACER: 0.1128, best_ACER: 0.0910, anchor_task: 0.0003, sampled_task: 0.0012, var_order: 0.7716, load_balance: 0.0677, gate_distill: 0.1291
+Epoch 14), test_ACER: 0.2070, best_ACER: 0.0910, anchor_task: 0.0007, sampled_task: 0.0011, var_order: 0.7516, load_balance: 0.0607, gate_distill: 0.1098
+RGB          : 0.1044
+Depth        : 0.0556
+IR           : 0.2839
+RGB+Depth    : 0.0241
+RGB+IR       : 0.0492
+IR+Depth     : 0.0195
+RGB+IR+Depth : 0.0147
+Epoch 15), test_ACER: 0.0788, best_ACER: 0.0788, anchor_task: 0.0005, sampled_task: 0.0009, var_order: 0.7478, load_balance: 0.0614, gate_distill: 0.0977
+RGB          : 0.1156
+Depth        : 0.0784
+IR           : 0.0651
+RGB+Depth    : 0.0210
+RGB+IR       : 0.0640
+IR+Depth     : 0.0152
+RGB+IR+Depth : 0.0230
+Epoch 16), test_ACER: 0.0546, best_ACER: 0.0546, anchor_task: 0.0002, sampled_task: 0.0014, var_order: 0.7548, load_balance: 0.0611, gate_distill: 0.0928
+Epoch 17), test_ACER: 0.0887, best_ACER: 0.0546, anchor_task: 0.0002, sampled_task: 0.0002, var_order: 0.7447, load_balance: 0.0515, gate_distill: 0.0795
+Epoch 18), test_ACER: 0.2545, best_ACER: 0.0546, anchor_task: 0.0003, sampled_task: 0.0005, var_order: 0.7427, load_balance: 0.0538, gate_distill: 0.0765
+RGB          : 0.0834
+Depth        : 0.0303
+IR           : 0.0885
+RGB+Depth    : 0.0147
+RGB+IR       : 0.0469
+IR+Depth     : 0.0202
+RGB+IR+Depth : 0.0238
+Epoch 19), test_ACER: 0.0440, best_ACER: 0.0440, anchor_task: 0.0001, sampled_task: 0.0004, var_order: 0.7352, load_balance: 0.0519, gate_distill: 0.0673
+Epoch 20), test_ACER: 0.0864, best_ACER: 0.0440, anchor_task: 0.0003, sampled_task: 0.0003, var_order: 0.7390, load_balance: 0.0544, gate_distill: 0.0663
+RGB          : 0.0892
+Depth        : 0.0379
+IR           : 0.0576
+RGB+Depth    : 0.0093
+RGB+IR       : 0.0393
+IR+Depth     : 0.0146
+RGB+IR+Depth : 0.0099
+Epoch 21), test_ACER: 0.0368, best_ACER: 0.0368, anchor_task: 0.0001, sampled_task: 0.0008, var_order: 0.7414, load_balance: 0.0557, gate_distill: 0.0667
+RGB          : 0.0866
+Depth        : 0.0230
+IR           : 0.0605
+RGB+Depth    : 0.0145
+RGB+IR       : 0.0260
+IR+Depth     : 0.0290
+RGB+IR+Depth : 0.0112
+Epoch 22), test_ACER: 0.0358, best_ACER: 0.0358, anchor_task: 0.0000, sampled_task: 0.0002, var_order: 0.7347, load_balance: 0.0467, gate_distill: 0.0594
+RGB          : 0.0832
+Depth        : 0.0274
+IR           : 0.0574
+RGB+Depth    : 0.0225
+RGB+IR       : 0.0203
+IR+Depth     : 0.0119
+RGB+IR+Depth : 0.0058
+Epoch 23), test_ACER: 0.0326, best_ACER: 0.0326, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7311, load_balance: 0.0447, gate_distill: 0.0566
+Epoch 24), test_ACER: 0.0342, best_ACER: 0.0326, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7303, load_balance: 0.0434, gate_distill: 0.0571
+RGB          : 0.1041
+Depth        : 0.0200
+IR           : 0.0419
+RGB+Depth    : 0.0105
+RGB+IR       : 0.0166
+IR+Depth     : 0.0122
+RGB+IR+Depth : 0.0046
+Epoch 25), test_ACER: 0.0300, best_ACER: 0.0300, anchor_task: 0.0001, sampled_task: 0.0001, var_order: 0.7283, load_balance: 0.0439, gate_distill: 0.0568
+RGB          : 0.0861
+Depth        : 0.0252
+IR           : 0.0382
+RGB+Depth    : 0.0135
+RGB+IR       : 0.0180
+IR+Depth     : 0.0161
+RGB+IR+Depth : 0.0050
+Epoch 26), test_ACER: 0.0289, best_ACER: 0.0289, anchor_task: 0.0000, sampled_task: 0.0004, var_order: 0.7280, load_balance: 0.0410, gate_distill: 0.0562
+Epoch 27), test_ACER: 0.0305, best_ACER: 0.0289, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7263, load_balance: 0.0411, gate_distill: 0.0540
+Epoch 28), test_ACER: 0.0360, best_ACER: 0.0289, anchor_task: 0.0001, sampled_task: 0.0003, var_order: 0.7249, load_balance: 0.0414, gate_distill: 0.0546
+Epoch 29), test_ACER: 0.0352, best_ACER: 0.0289, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7243, load_balance: 0.0416, gate_distill: 0.0532
+Epoch 30), test_ACER: 0.0327, best_ACER: 0.0289, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7239, load_balance: 0.0393, gate_distill: 0.0514
+Epoch 31), test_ACER: 0.0360, best_ACER: 0.0289, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7239, load_balance: 0.0396, gate_distill: 0.0507
+Epoch 32), test_ACER: 0.0340, best_ACER: 0.0289, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7231, load_balance: 0.0401, gate_distill: 0.0496
+RGB          : 0.0771
+Depth        : 0.0177
+IR           : 0.0414
+RGB+Depth    : 0.0105
+RGB+IR       : 0.0219
+IR+Depth     : 0.0139
+RGB+IR+Depth : 0.0059
+Epoch 33), test_ACER: 0.0269, best_ACER: 0.0269, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7238, load_balance: 0.0389, gate_distill: 0.0486
+Epoch 34), test_ACER: 0.0310, best_ACER: 0.0269, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7237, load_balance: 0.0398, gate_distill: 0.0472
+Epoch 35), test_ACER: 0.0328, best_ACER: 0.0269, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7229, load_balance: 0.0398, gate_distill: 0.0476
+Epoch 36), test_ACER: 0.0357, best_ACER: 0.0269, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7228, load_balance: 0.0384, gate_distill: 0.0452
+Epoch 37), test_ACER: 0.0318, best_ACER: 0.0269, anchor_task: 0.0001, sampled_task: 0.0001, var_order: 0.7212, load_balance: 0.0394, gate_distill: 0.0451
+Epoch 38), test_ACER: 0.0286, best_ACER: 0.0269, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7209, load_balance: 0.0394, gate_distill: 0.0445
+RGB          : 0.0687
+Depth        : 0.0211
+IR           : 0.0423
+RGB+Depth    : 0.0121
+RGB+IR       : 0.0200
+IR+Depth     : 0.0085
+RGB+IR+Depth : 0.0046
+Epoch 39), test_ACER: 0.0253, best_ACER: 0.0253, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7206, load_balance: 0.0383, gate_distill: 0.0440
+Epoch 40), test_ACER: 0.0268, best_ACER: 0.0253, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7207, load_balance: 0.0388, gate_distill: 0.0443
+RGB          : 0.0690
+Depth        : 0.0203
+IR           : 0.0399
+RGB+Depth    : 0.0109
+RGB+IR       : 0.0223
+IR+Depth     : 0.0094
+RGB+IR+Depth : 0.0049
+Epoch 41), test_ACER: 0.0253, best_ACER: 0.0253, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7207, load_balance: 0.0382, gate_distill: 0.0430
+Epoch 42), test_ACER: 0.0275, best_ACER: 0.0253, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7201, load_balance: 0.0376, gate_distill: 0.0438
+Epoch 43), test_ACER: 0.0267, best_ACER: 0.0253, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7203, load_balance: 0.0388, gate_distill: 0.0438
+Epoch 44), test_ACER: 0.0290, best_ACER: 0.0253, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7199, load_balance: 0.0389, gate_distill: 0.0434
+Epoch 45), test_ACER: 0.0259, best_ACER: 0.0253, anchor_task: 0.0001, sampled_task: 0.0001, var_order: 0.7197, load_balance: 0.0385, gate_distill: 0.0430
+Epoch 46), test_ACER: 0.0271, best_ACER: 0.0253, anchor_task: 0.0001, sampled_task: 0.0001, var_order: 0.7201, load_balance: 0.0381, gate_distill: 0.0431
+Epoch 47), test_ACER: 0.0253, best_ACER: 0.0253, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7200, load_balance: 0.0378, gate_distill: 0.0430
+Epoch 48), test_ACER: 0.0261, best_ACER: 0.0253, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7192, load_balance: 0.0384, gate_distill: 0.0435
+Epoch 49), test_ACER: 0.0275, best_ACER: 0.0253, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7197, load_balance: 0.0399, gate_distill: 0.0437
+Epoch 50), test_ACER: 0.0255, best_ACER: 0.0253, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7198, load_balance: 0.0397, gate_distill: 0.0428
+Epoch 51), test_ACER: 0.0314, best_ACER: 0.0253, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7197, load_balance: 0.0388, gate_distill: 0.0428
+Epoch 52), test_ACER: 0.0255, best_ACER: 0.0253, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7198, load_balance: 0.0380, gate_distill: 0.0431
+Epoch 53), test_ACER: 0.0274, best_ACER: 0.0253, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7197, load_balance: 0.0391, gate_distill: 0.0430
+RGB          : 0.0692
+Depth        : 0.0187
+IR           : 0.0396
+RGB+Depth    : 0.0106
+RGB+IR       : 0.0209
+IR+Depth     : 0.0066
+RGB+IR+Depth : 0.0045
+Epoch 54), test_ACER: 0.0243, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7192, load_balance: 0.0379, gate_distill: 0.0425
+Epoch 55), test_ACER: 0.0275, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7192, load_balance: 0.0392, gate_distill: 0.0432
+Epoch 56), test_ACER: 0.0261, best_ACER: 0.0243, anchor_task: 0.0001, sampled_task: 0.0000, var_order: 0.7199, load_balance: 0.0396, gate_distill: 0.0438
+Epoch 57), test_ACER: 0.0268, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7196, load_balance: 0.0385, gate_distill: 0.0439
+Epoch 58), test_ACER: 0.0272, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7197, load_balance: 0.0389, gate_distill: 0.0422
+Epoch 59), test_ACER: 0.0262, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7192, load_balance: 0.0392, gate_distill: 0.0442
+Epoch 60), test_ACER: 0.0286, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7190, load_balance: 0.0395, gate_distill: 0.0433
+Epoch 61), test_ACER: 0.0264, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7197, load_balance: 0.0390, gate_distill: 0.0441
+Epoch 62), test_ACER: 0.0264, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7201, load_balance: 0.0391, gate_distill: 0.0428
+Epoch 63), test_ACER: 0.0295, best_ACER: 0.0243, anchor_task: 0.0001, sampled_task: 0.0001, var_order: 0.7196, load_balance: 0.0394, gate_distill: 0.0431
+Epoch 64), test_ACER: 0.0266, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7189, load_balance: 0.0380, gate_distill: 0.0431
+Epoch 65), test_ACER: 0.0254, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7198, load_balance: 0.0380, gate_distill: 0.0433
+Epoch 66), test_ACER: 0.0257, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7192, load_balance: 0.0373, gate_distill: 0.0430
+Epoch 67), test_ACER: 0.0282, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7204, load_balance: 0.0389, gate_distill: 0.0430
+Epoch 68), test_ACER: 0.0252, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7191, load_balance: 0.0375, gate_distill: 0.0428
+Epoch 69), test_ACER: 0.0320, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7190, load_balance: 0.0386, gate_distill: 0.0425
+Epoch 70), test_ACER: 0.0272, best_ACER: 0.0243, anchor_task: 0.0001, sampled_task: 0.0000, var_order: 0.7197, load_balance: 0.0383, gate_distill: 0.0436
+Epoch 71), test_ACER: 0.0266, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7198, load_balance: 0.0385, gate_distill: 0.0432
+Epoch 72), test_ACER: 0.0276, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7195, load_balance: 0.0392, gate_distill: 0.0434
+Epoch 73), test_ACER: 0.0274, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7194, load_balance: 0.0371, gate_distill: 0.0430
+Epoch 74), test_ACER: 0.0295, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7193, load_balance: 0.0387, gate_distill: 0.0426
+Epoch 75), test_ACER: 0.0264, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7195, load_balance: 0.0394, gate_distill: 0.0428
+Epoch 76), test_ACER: 0.0294, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7194, load_balance: 0.0395, gate_distill: 0.0432
+Epoch 77), test_ACER: 0.0280, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7193, load_balance: 0.0391, gate_distill: 0.0435
+Epoch 78), test_ACER: 0.0277, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7196, load_balance: 0.0374, gate_distill: 0.0433
+Epoch 79), test_ACER: 0.0282, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7193, load_balance: 0.0392, gate_distill: 0.0426
+Epoch 80), test_ACER: 0.0279, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7193, load_balance: 0.0382, gate_distill: 0.0424
+Epoch 81), test_ACER: 0.0271, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7194, load_balance: 0.0392, gate_distill: 0.0428
+Epoch 82), test_ACER: 0.0276, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7192, load_balance: 0.0388, gate_distill: 0.0432
+Epoch 83), test_ACER: 0.0261, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7204, load_balance: 0.0387, gate_distill: 0.0435
+Epoch 84), test_ACER: 0.0315, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7193, load_balance: 0.0384, gate_distill: 0.0435
+Epoch 85), test_ACER: 0.0253, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7189, load_balance: 0.0389, gate_distill: 0.0424
+Epoch 86), test_ACER: 0.0271, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7194, load_balance: 0.0386, gate_distill: 0.0425
+Epoch 87), test_ACER: 0.0304, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7197, load_balance: 0.0389, gate_distill: 0.0422
+Epoch 88), test_ACER: 0.0285, best_ACER: 0.0243, anchor_task: 0.0002, sampled_task: 0.0001, var_order: 0.7200, load_balance: 0.0392, gate_distill: 0.0429
+Epoch 89), test_ACER: 0.0308, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7196, load_balance: 0.0384, gate_distill: 0.0434
+Epoch 90), test_ACER: 0.0260, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7196, load_balance: 0.0371, gate_distill: 0.0423
+Epoch 91), test_ACER: 0.0245, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7190, load_balance: 0.0386, gate_distill: 0.0429
+Epoch 92), test_ACER: 0.0276, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7197, load_balance: 0.0389, gate_distill: 0.0436
+Epoch 93), test_ACER: 0.0282, best_ACER: 0.0243, anchor_task: 0.0001, sampled_task: 0.0001, var_order: 0.7192, load_balance: 0.0376, gate_distill: 0.0422
+Epoch 94), test_ACER: 0.0293, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7194, load_balance: 0.0384, gate_distill: 0.0424
+Epoch 95), test_ACER: 0.0276, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7197, load_balance: 0.0388, gate_distill: 0.0430
+Epoch 96), test_ACER: 0.0289, best_ACER: 0.0243, anchor_task: 0.0001, sampled_task: 0.0000, var_order: 0.7197, load_balance: 0.0386, gate_distill: 0.0431
+Epoch 97), test_ACER: 0.0245, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7195, load_balance: 0.0394, gate_distill: 0.0431
+Epoch 98), test_ACER: 0.0291, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0000, var_order: 0.7195, load_balance: 0.0388, gate_distill: 0.0425
+Epoch 99), test_ACER: 0.0263, best_ACER: 0.0243, anchor_task: 0.0000, sampled_task: 0.0001, var_order: 0.7194, load_balance: 0.0386, gate_distill: 0.0434

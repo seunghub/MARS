@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=2 python train.py --is-multimodal --checkname MCubeSNet --use-pretrained-resnet --name=experiment_35 --weight_task=0.1 --weight_lb=0.001 --weight_distill=0.005 --weight_order=0.01 --prob_epoch=30

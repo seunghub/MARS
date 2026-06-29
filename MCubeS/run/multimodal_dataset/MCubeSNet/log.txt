@@ -1,0 +1,32 @@
+Namespace(backbone='resnet_adv', base_size=512, batch_size=1, checkname='deeplab-resnet_adv', crop_size=512, cuda=True, dataset='multimodal_dataset', epochs=500, eval_interval=1, freeze_bn=False, ft=False, gpu_ids=[0], is_multimodal=True, list_folder='list_folder', loss_type='ce', lr=0.05, lr_scheduler='poly', momentum=0.9, nesterov=False, no_cuda=False, no_val=False, num_experts=16, out_stride=16, positional_encoding=False, propagation=0, pth_path='./run/multimodal_dataset/MCubeSNet/moe_35/checkpoint.pth.tar', ratio=3.0, resume=None, seed=1, start_epoch=0, sync_bn=False, test_batch_size=1, top_k=5, use_aolp=True, use_balanced_weights=True, use_dolp=True, use_nir=True, use_pretrained_resnet=True, use_sbd=False, weight_decay=0.0005, workers=12)
+USE Multimodal Model
+-------------- save DIR -----------------------
+./run/multimodal_dataset/MCubeSNet/moe_35/test
+Number of images in train: 302
+Number of images in val: 96
+Number of images in test: 102
+Namespace(backbone='resnet_adv', base_size=512, batch_size=1, checkname='deeplab-resnet_adv', crop_size=512, cuda=True, dataset='multimodal_dataset', epochs=500, eval_interval=1, freeze_bn=False, ft=False, gpu_ids=[0], is_multimodal=True, list_folder='list_folder', loss_type='ce', lr=0.05, lr_scheduler='poly', momentum=0.9, nesterov=False, no_cuda=False, no_val=False, num_experts=16, out_stride=16, positional_encoding=False, propagation=0, pth_path='./run/multimodal_dataset/MCubeSNet/experiment_35/checkpoint.pth.tar', ratio=3.0, resume=None, seed=1, start_epoch=0, sync_bn=False, test_batch_size=1, top_k=5, use_aolp=True, use_balanced_weights=True, use_dolp=True, use_nir=True, use_pretrained_resnet=True, use_sbd=False, weight_decay=0.0005, workers=12)
+USE Multimodal Model
+-------------- save DIR -----------------------
+./run/multimodal_dataset/MCubeSNet/experiment_35/test
+Number of images in train: 302
+Number of images in val: 96
+Number of images in test: 102
+Using poly LR Scheduler!
+Starting Epoch: 0
+Total Epoches: 500
+
+=== Per-modality mIoU ===
+               rgb: 0.4730
+          rgb+aolp: 0.4767
+          rgb+dolp: 0.4753
+           rgb+nir: 0.4769
+     rgb+aolp+dolp: 0.4777
+      rgb+aolp+nir: 0.4808
+      rgb+dolp+nir: 0.4776
+ rgb+aolp+dolp+nir: 0.4808
+
+=== Test Results ===
+Acc: 0.7916, Acc_class: 0.5946, mIoU: 0.4773, FWIoU: 0.6801
+Images saved in: ./run/multimodal_dataset/MCubeSNet/experiment_35/test_images
+Namespace(backbone='resnet_adv', base_size=512, batch_size=1, checkname='deeplab-resnet_adv', crop_size=512, cuda=True, dataset='multimodal_dataset', epochs=500, eval_interval=1, freeze_bn=False, ft=False, gpu_ids=[0], is_multimodal=True, list_folder='list_folder', loss_type='ce', lr=0.05, lr_scheduler='poly', momentum=0.9, nesterov=False, no_cuda=False, no_val=False, num_experts=16, out_stride=16, positional_encoding=False, propagation=0, pth_path='./run/multimodal_dataset/MCubeSNet/experiment_35/checkpoint.pth.tar', ratio=3.0, resume=None, seed=1, start_epoch=0, sync_bn=False, test_batch_size=1, top_k=5, use_aolp=True, use_balanced_weights=True, use_dolp=True, use_nir=True, use_pretrained_resnet=True, use_sbd=False, weight_decay=0.0005, workers=12)
