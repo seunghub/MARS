@@ -1,9 +1,7 @@
 <div align="center">
 
-# MARS: Missingness-Aware Residual-guided Specialization
-
-### Residual-Guided Expert Specialization for Incomplete Multimodal Learning
-
+# Residual-Guided Expert Specialization for Incomplete Multimodal Learning
+### ECCV 2026 Poster
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](#installation)
 [![PyTorch](https://img.shields.io/badge/PyTorch-Implementation-ee4c2c.svg)](#installation)
 [![Task](https://img.shields.io/badge/Tasks-Classification%20%7C%20Segmentation-7b61ff.svg)](#benchmark-results)
@@ -29,13 +27,13 @@
 
 MARS is designed for incomplete multimodal learning, where all modalities are available during training but arbitrary subsets may be missing at test time.
 
-Given a full representation \(z^{full}\) and a partial representation \(z^{partial}\), MARS computes a residual:
+Given a full representation $z^{full}$ and a partial representation $z^{partial}$, MARS computes a residual:
 
 ```math
 z^{res} = z^{full} - z^{partial}
 ```
 
-The residual router uses \(z^{res}\) as privileged information to assign each sample to experts specialized for the corresponding missingness-induced deviation. Since \(z^{res}\) cannot be computed at inference, a feature router learns to mimic the residual router from \(z^{partial}\) alone.
+The residual router uses $z^{res}$ as privileged information to assign each sample to experts specialized for the corresponding missingness-induced deviation. Since $z^{res}$ cannot be computed at inference, a feature router learns to mimic the residual router from $z^{partial}$ alone.
 
 ```math
 \mathcal{L}_{total}
@@ -55,29 +53,6 @@ The residual router uses \(z^{res}\) as privileged information to assign each sa
 | CREMA-D | Emotion classification | Audio / Visual | Accuracy ↑ | 61.35 | **65.52** |
 | UPMC Food-101 | Food classification | Image / Text | Accuracy ↑ | 84.81 | **91.59** |
 | MCubeS | Material segmentation | RGB / AoLP / DoLP / NIR | mIoU ↑ | 0.4683 | **0.4773** |
-
-### CASIA-SURF per-modality ACER ↓
-
-| RGB | Depth | IR | DMRNet | SimMLM | MARS |
-|:---:|:---:|:---:|---:|---:|---:|
-| ✅ | ❌ | ❌ | 8.23 | 7.82 | **6.92** |
-| ❌ | ✅ | ❌ | 2.01 | 2.42 | **1.87** |
-| ❌ | ❌ | ✅ | 8.98 | 9.05 | **3.96** |
-| ✅ | ✅ | ❌ | 1.21 | 1.13 | **1.06** |
-| ✅ | ❌ | ✅ | 3.00 | 3.38 | **2.09** |
-| ❌ | ✅ | ✅ | 0.80 | 1.15 | **0.66** |
-| ✅ | ✅ | ✅ | 0.66 | 0.63 | **0.45** |
-| **Average** |  |  | 3.58 | 3.66 | **2.43** |
-
-### Qualitative examples
-
-<p align="center">
-  <img src="assets/gradcam_casia_surf.png" width="95%" alt="Grad-CAM visualization on CASIA-SURF">
-</p>
-
-<p align="center">
-  <img src="assets/qualitative_mcubes.png" width="95%" alt="Qualitative segmentation results on MCubeS">
-</p>
 
 ## 📁 Repository Structure
 
@@ -303,20 +278,6 @@ python test.py \
   --use-nir
 ```
 
-## 📊 Analysis Figures
-
-<p align="center">
-  <img src="assets/routing_prob_casia_surf.png" width="70%" alt="Routing probabilities on CASIA-SURF">
-</p>
-
-<p align="center">
-  <img src="assets/tsne_visualization.png" width="95%" alt="Embedding visualization">
-</p>
-
-<p align="center">
-  <img src="assets/sensitivity_casia_surf.png" width="38%" alt="Sensitivity analysis">
-  <img src="assets/sampling_prob_casia_surf.png" width="38%" alt="Sampling probability analysis">
-</p>
 
 ## ✅ Practical Tips
 
@@ -334,11 +295,13 @@ This repository builds on several public multimodal learning and segmentation co
 If this repository is useful for your research, please cite:
 
 ```bibtex
-@misc{baek2026mars,
+@inproceedings{baek2026mars,
   title  = {Residual-Guided Expert Specialization for Incomplete Multimodal Learning},
-  author = {Seunghun Baek and Jihwan Park and Jaeyoon Sim and Minjae Jeong and Hoseok Lee and Won Hwa Kim},
+  author = {Baek, Seunghun and Park, Jihwan and Sim, Jaeyoon and Jeong, Minjae and Lee, Hoseok and Kim, Won Hwa},
   year   = {2026},
-  note   = {Preprint}
+  booktitle={European Conference on Computer Vision},
+  year={2026},
+  organization={Springer}
 }
 ```
 
