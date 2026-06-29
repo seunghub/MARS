@@ -1,6 +1,6 @@
 <div align="center">
 
-# Residual-Guided Expert Specialization for Incomplete Multimodal Learning
+# Residual-Guided Expert Specialization \\ for Incomplete Multimodal Learning
 ### ECCV 2026 Poster
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](#installation)
 [![PyTorch](https://img.shields.io/badge/PyTorch-Implementation-ee4c2c.svg)](#installation)
